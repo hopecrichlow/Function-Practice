@@ -78,7 +78,7 @@ var greet = function (name) {
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
 
-madLib = function (num1, place, num2, erAdj, occupation) {
+var madLib = function (num1, place, num2, erAdj, occupation) {
  return "Pro-Tip: every " + num1 + " hour(s), while drinking craft beer from " + place + ", spend " + num2 + " hour(s) playing ping-pong with JD. It will make you a way " + erAdj + " super-ninja-" + occupation + "/developer than 3WSchools ever could!";
 };
 
@@ -90,17 +90,25 @@ madLib = function (num1, place, num2, erAdj, occupation) {
 // Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in JavaScript.
 // ---------------------
 
-function max(){
-    //...
-}
+function max(a, b){
+  if (a > b) {
+    return a; 
+} if (a < b) {
+    return b; }
+};
 
 // ---------------------
 // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
 // ---------------------
 
-function maxOfThree(){
-    //...
-}
+function maxOfThree(a, b, c){
+  [a, b, c].reduce (function(largest, current) {
+    if (current > largest) {
+        largest = current;
+    }
+    return largest;
+    });
+};
 
 // ---------------------
 // Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
