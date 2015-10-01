@@ -101,14 +101,14 @@ function max(a, b){
 // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
 // ---------------------
 
-function maxOfThree(a, b, c){
-  [a, b, c].reduce (function(largest, current) {
-    if (current > largest) {
-        largest = current;
-    }
-    return largest;
-    });
-};
+// function maxOfThree(a, b, c){
+//   [a, b, c].reduce (function(largest, current) {
+//     if (current > largest) {
+//         largest = current;
+//     }
+//     return largest;
+//     });
+// };
 
 // ---------------------
 // Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
