@@ -152,13 +152,12 @@ function rovarspraket(phrase){
 
 }
 
-
 // ---------------------
 // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
 // ---------------------
 
-function reverse(){
-    //...
+function reverse(string){
+  return string.split('').reverse().join('');
 }
 
 // ---------------------
@@ -166,7 +165,12 @@ function reverse(){
 // ---------------------
 
 function findLongestWord(words){
-    //...
+    var longest = '';
+        words.forEach(function(word){
+            if (word.length > longest.length)
+                longest = word;
+        });
+            return winner.length;
 }
 
 // ---------------------
