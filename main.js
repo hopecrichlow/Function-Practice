@@ -1,3 +1,4 @@
+(function() {
 ///////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////
 ////    ______                _   _                ////
@@ -101,22 +102,28 @@ function max(a, b){
 // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
 // ---------------------
 
-// function maxOfThree(a, b, c){
-//   [a, b, c].reduce (function(largest, current) {
-//     if (current > largest) {
-//         largest = current;
-//     }
-//     return largest;
-//     });
-// };
 
+function maxOfThree(a, b, c){
+  var numbers = [a,b,c]
+  numbers.reduce(function(largest, current) {
+    if (current > largest) {
+        largest = current;
+    }
+    return largest;
+    }, Number.MIN_VALUE);
+};
+
+console.log(maxOfThree(2,6,4));
 // ---------------------
 // Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
 // ---------------------
 
 function isVowel(char){
-    //...
-}
+    if {(char) === ("a") || (char) === ("e") || (char) === ("i") || (char) === ("o") || (char) === ("u")}
+      return true;
+    else 
+      return false;
+};
 
 // ---------------------
 // Write a function translate() that will translate a text into "rÃ¶varsprÃ¥ket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
@@ -158,3 +165,5 @@ function filterLongWords(words, i){
 function charFreq(string){
     //...
 }
+
+}());
